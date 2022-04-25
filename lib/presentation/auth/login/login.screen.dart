@@ -9,7 +9,7 @@ class LoginScreen extends GetView<LoginController> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('LoginScreen'),
+        title: Text('Login Screen'),
         centerTitle: true,
       ),
       body: Center(
