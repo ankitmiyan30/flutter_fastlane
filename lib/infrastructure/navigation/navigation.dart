@@ -13,11 +13,11 @@ class EnvironmentsBadge extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var env = ConfigEnvironments.getEnvironments()['env'];
-    return env != Environments.PRODUCTION
+    return env != Environments.production
         ? Banner(
             location: BannerLocation.topStart,
             message: env!,
-            color: env == Environments.QAS ? Colors.blue : Colors.purple,
+            color: env == Environments.qas ? Colors.blue : Colors.purple,
             child: child,
           )
         : SizedBox(child: child);
@@ -27,17 +27,17 @@ class EnvironmentsBadge extends StatelessWidget {
 class Nav {
   static List<GetPage> routes = [
     GetPage(
-      name: Routes.HOME,
+      name: Routes.home,
       page: () => HomeScreen(),
       binding: HomeControllerBinding(),
     ),
     GetPage(
-      name: Routes.LOGIN,
+      name: Routes.login,
       page: () => LoginScreen(),
       binding: LoginControllerBinding(),
     ),
     GetPage(
-      name: Routes.SIGNUP,
+      name: Routes.signup,
       page: () => SignupScreen(),
       binding: SignupControllerBinding(),
     ),
