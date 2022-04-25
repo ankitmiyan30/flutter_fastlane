@@ -10,7 +10,7 @@ class HomeController extends GetxController {
 
   @override
   void onReady() {
-    print("Init");
+    print("In it");
     super.onReady();
   }
 
